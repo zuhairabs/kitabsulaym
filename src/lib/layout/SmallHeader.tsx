@@ -4,12 +4,12 @@ import Logo from "../../assets/logo.png";
 import BookmarkSwitch from "~/lib/layout/BookmarkSwitch";
 import NoteSwitch from "~/lib/layout/NotesSwitch";
 
-import Search from "./Search";
 import ThemeToggle from "./ThemeToggle";
 
-const Header = () => {
+const SmallHeader = () => {
   const logoTextColor = useColorModeValue("gray.900", "gray.50");
   const textShadow = useColorModeValue("4px 4px #d7d7d7", "4px 4px #4a4a4a");
+  const BgColor = useColorModeValue("white", "dark.500");
 
   return (
     <Flex
@@ -21,6 +21,14 @@ const Header = () => {
       gridGap={2}
       marginBottom="1rem"
       marginTop="1rem"
+      position="fixed"
+      top="-16px"
+      zIndex="10"
+      background={BgColor}
+      px="2rem"
+      py="0.5rem"
+      transition="all 0.2s ease-in-out"
+      boxShadow="rgba(0, 0, 0, 0.05) 0px 5px 10px"
     >
       <Box
         display="flex"
@@ -40,7 +48,6 @@ const Header = () => {
         </Text>
       </Box>
       <Box display="flex" gap="1rem" marginLeft="auto">
-        <Search />
         <NoteSwitch />
         <BookmarkSwitch />
         <ThemeToggle />
@@ -49,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SmallHeader;

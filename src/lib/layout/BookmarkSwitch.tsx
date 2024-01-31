@@ -1,12 +1,6 @@
-import {
-  Box,
-  Tooltip,
-  useColorMode,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Tooltip, useColorModeValue } from "@chakra-ui/react";
 import type { ReactNode } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { FaSun } from "react-icons/fa";
+import { BsBookmarksFill } from "react-icons/bs";
 
 type IconWrapperProps = {
   children: ReactNode;
@@ -26,7 +20,7 @@ const IconWrapper = ({ children, onClick }: IconWrapperProps) => {
     <Tooltip
       padding=".5rem"
       borderRadius="5px"
-      label="Toggle theme"
+      label="Bookmarks"
       hasArrow
       placement="left"
     >
@@ -54,18 +48,14 @@ const IconWrapper = ({ children, onClick }: IconWrapperProps) => {
   );
 };
 
-const ThemeToggle = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+const BookmarkSwitch = () => {
+  const color = useColorModeValue("#2b2b2b", "#d9d9d9");
 
-  return colorMode === "light" ? (
-    <IconWrapper onClick={toggleColorMode}>
-      <FaSun color="#2b2b2b" size={20} />
-    </IconWrapper>
-  ) : (
-    <IconWrapper onClick={toggleColorMode}>
-      <BsFillMoonStarsFill color="#d9d9d9" size={20} />
+  return (
+    <IconWrapper onClick={() => {}}>
+      <BsBookmarksFill color={color} size={20} />
     </IconWrapper>
   );
 };
 
-export default ThemeToggle;
+export default BookmarkSwitch;

@@ -8,12 +8,14 @@ const Footer = () => {
       align="center"
       alignSelf="flex-end"
       justifyContent="center"
+      marginTop="1.5rem"
     >
-      <Text fontSize="xs">
-        {new Date().getFullYear()} -{" "}
-        <Link href="https://sznm.dev" isExternal>
-          sznm.dev
-        </Link>
+      <Text fontWeight="semibold" fontSize="md">
+        &copy; &nbsp;
+        <Link href="https://theburningdoor.com" isExternal>
+          The Burning Door
+        </Link>{" "}
+        &nbsp; - &nbsp;{new Date().getFullYear()}
       </Text>
     </Flex>
   );

@@ -1,0 +1,12 @@
+import { BOOK_CONTENT, getBookContent } from "./content";
+import { BOOK_TOC, getTitle } from "./titles";
+
+export const DESCRIPTION = {
+  text: `The Book of Sulaym ibn Qays (Arabic: كِتَاب سُلَيْم بن قَيْس, romanized: Kitāb Sulaym ibn Qays) is the oldest known Shia hadith collection. It was attributed to Sulaym ibn Qays al-Hilali (died 678), who purportedly entrusted it to Aban ibn Abi Ayyash.\n
+  Hossein Modarressi dates the original core of this work to the final years of Hisham ibn Abd al-Malik's reign (r.723-743), which make it one of the oldest Islamic books that are still extant. Two individual passages which have been the subject of a case study have been dated to c. 762-780 and to the late 8th/early 9th century, respectively.\n
+  Sulaym ibn Qays Kufi Amari Hilal is Tabai and has seen the lifetime of five Masoom Imams, including Imam Ali (as), Imam Hassan (as), Imam Hussain (as), Imam Zainul Abideen (as) and Imam Mohammed Baqir (as). Sulaym has written those accounts in his priceless book, which he has either observed by his own eyes or has directly heard from those who have directly heard from the Divine tongues of the Prophet Mohammed (saw) or Amir-ul-Momineen Ali ibn abi Talib (as).\n
+  The date of birth of Sulaym ibn Qays can be estimated from the history somewhere during the early years after migration of the Holy Prophets to Medina and his demise is believed to have taken place somewhere between 70 to 90 Hijri. Most of the Shia scholars have agreed that his book is the first Shia Ahadith book compiled even before the famous Shia book, consisting of the sermons and Ahadith narrated by Imam Zain-ul-Abideen Sahifa-e-Kamila'.\n
+  Ibn Nadeem has included in his book when commenting about the scholars and Ahadith contributors that Sulaym ibn Qays Hilali was among the devout companions of Amir-ul-Momineen. He escaped persecution of Hajjaj ibn Yousif and took refuge with Abaan ibn abi Ayash. Hajjaj wanted to arrest and kill Sulaym Ibn Qays, so Abaan offered him shelter in recognition of him being a companion of Amir-ul- Momineen. When Sulaym ibn Qays was inspired about his death, he told Abaan, O the son of my brother, I am about to leave this world, as Prophet has informed me so. After having said that Sulaym entrusted to Abaan his book (as it is in your hands today). It's a famous book of Sulaym, which does not give reference to any other book but directly narrates from Amir-ul-Momineen (as) and his pious companions.`,
+};
+
+export { BOOK_CONTENT, getBookContent, BOOK_TOC, getTitle };
